@@ -1,5 +1,6 @@
 # Navidrome_love_to_ListenBrainz
 A Python script to synchronize your loved songs from your Navidrome database to your ListenBrainz.org profile.
+A maintenance script to run at your discretion, updating loved songs in Navidrome. This is necessary because loved songs do not sync automatically, even when Navidrome and ListenBrainz are configured to sync scrobbles.
 
 ## Description
 
