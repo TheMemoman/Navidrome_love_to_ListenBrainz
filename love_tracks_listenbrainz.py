@@ -13,8 +13,8 @@ END_DATE = "2026-01-15"
 
 FEEDBACK_URL = "https://api.listenbrainz.org/1/feedback/recording-feedback"
 REQUEST_DELAY = 0.25                  # Seconds between API calls
-MAX_RETRIES = 3
-RETRY_DELAY = 1  # seconds between retries
+MAX_RETRIES = 6
+RETRY_DELAY = 1.5  # seconds between retries
 
 # --------------------------------------------------
 # QUERY STARRED TRACKS FROM NAVIDROME
