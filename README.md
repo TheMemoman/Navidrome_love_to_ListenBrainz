@@ -2,6 +2,17 @@
 A Python script to synchronize your loved songs from your Navidrome database to your ListenBrainz.org profile.
 A maintenance script to run at your discretion, updating loved songs in Navidrome. This is necessary because loved songs do not sync automatically, even when Navidrome and ListenBrainz are configured to sync scrobbles.
 
+## Important Note
+
+Syncing loved tracks to ListenBrainz requires that each song in your Navidrome database has a valid `mbz_recording_id` from MusicBrainz.  
+
+To ensure this:
+
+1. Import song metadata from MusicBrainz, for example using [MusicBrainz Picard](https://picard.musicbrainz.org/).
+2. Perform a full scan of your Navidrome database so that the `mbz_recording_id` values are written and updated in the database.
+
+Without the  `mbz_recording_id` attribute loved data will not sync correctly with ListenBrainz.
+
 ## Description
 
 The script connects to your Navidrome database and retrieves all tracks you’ve marked as “loved” within the specified date range (`START_DATE` to `END_DATE`). It loops through each track, extracting essential metadata such as the recording MBID, artist name, track title, and album. Tracks without a valid MusicBrainz Recording MBID are skipped to ensure that only recognized recordings are submitted to ListenBrainz.
