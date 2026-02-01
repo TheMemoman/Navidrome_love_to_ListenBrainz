@@ -7,7 +7,7 @@ from datetime import datetime, timedelta, timezone
 # CONFIG
 # --------------------------------------------------
 DB_PATH = "navidrome.db"            # Path to your Navidrome database file
-LISTENBRAINZ_TOKEN = "1807cf7a-24db-4462-ab41-fd46b220ca42"             # <-- Put your ListenBrainz token here
+LISTENBRAINZ_TOKEN = "xxxxxxxxxxxxxxx"             # <-- Put your ListenBrainz token here
 LOOKBACK_DAYS = 7 # Days to look back for stars. Ex: 1 = "last 24 hours", 0.5 = "last 12 hours"
 
 FEEDBACK_URL = "https://api.listenbrainz.org/1/feedback/recording-feedback"
